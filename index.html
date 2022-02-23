@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<body>
+    <h1>Log in</h1>
+
+    <!-- Login input -->
+    <form action="loginFile.php">
+        <!-- Email input -->
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+        <!-- Password input -->
+        <label for="Password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <br>
+
+        <!-- Remember me selectbox -->
+        <div>
+            <!-- <label for="remember">Remember me</label> -->
+            <input type="radio" name="remember" id="remember">Remember me
+        </div>
+        <br> 
+        <!-- Log In button -->
+        <div>
+            <button type="submit">Log In</button>
+        </div>
+        <br>
+        <div>
+            <!-- Forgot Password -->
+            <a href="/forgotPassword">Forgot password?</a>
+            <br>
+            <!-- Create an account -->
+            New here? <a href="/sign in">Sign in</a>
+        </div>
+    </form>
+
+</body>
+</html>
