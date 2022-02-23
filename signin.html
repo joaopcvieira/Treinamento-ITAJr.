@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome</h2>
+    <h3> Please fill out the form in order to sign in</h3>
+    <form action="database.php">
+        <!-- Name input -->
+        <div>
+            <label for="firstname">First Name</label><br>
+            <input type="name" name="firstname" id="firstname"><br>
+            <label for="lastname">Last Name</label><br>
+            <input type="name" name="lastname" id="lastname"><br>
+        </div>
+        <!-- Email input -->
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="emailconf">Confirm your email</label><br>
+            <input type="email" name="emailconf" id="emailconf"><br>
+        </div>
+        <!-- Password input -->
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password"><br>
+            <label for="passwordconfirm">Confirm your password</label><br>
+            <input type="password" name="passwordconfirm" id="passwordconfirm"><br>
+        </div>
+        <!-- Date of Birth -->
+        <div>
+            <label for="birthday">Birthday</label><br>  
+            <input type="date" name="birthdate" id="birthdate"><br>
+        </div>
+        <!-- News and Agree to politics -->
+        <div>
+            <label for="extra"></label><br><br>
+            <input type="checkbox" name="agreeToPolitics" id="politics"> Do you agree with the <strong> terms of <a href="#">Agreement</a></strong><br>
+            <input type="checkbox" name="agreeToNews" id="News"> Would you be interested to recieve <strong> news </strong>about us in your email?
+        </div>
+        <br>
+        <!-- Submit -->
+        <br>
+        <div>
+            <button type="submit">Sign In</button>
+        </div>
+    </form>
+
+    
+</body>
+</html>
