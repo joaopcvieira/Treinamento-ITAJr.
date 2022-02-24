@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Log in</title>
 </head>
+
 <body>
-    <h1>Log in</h1>
+    <div id="container">
+        <img id="ITAJrlogo" src="./img/ITA Jr LogoEscuro.png" alt="ITAJr.'s logo">
 
-    <!-- Login input -->
-    <form action="loginFile.php">
-        <!-- Email input -->
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
-        <!-- Password input -->
-        <label for="Password">Password</label><br>
-        <input type="password" name="password" id="password" placeholder="Enter your password">
-        <br>
 
-        <!-- Remember me selectbox -->
-        <div>
-            <!-- <label for="remember">Remember me</label> -->
-            <input type="radio" name="remember" id="remember">Remember me
+        <div class="box">
+            <h1>Log in</h1>
+            <!-- Login input -->
+            <form action="loginFile.php">
+
+                <!-- Email input -->
+                <div class="form-group">
+                    <!-- <label for="email">Email</label> -->
+                    <div class="inputLine">
+                        <p>
+                            <img src="./img/Email_Logo.png" alt="email logo">
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-group">
+                    <div class="inputLine">
+                        <p>
+                            <!-- <label for="Password">Password</label> -->
+                            <img src="./img/Password_Logo.png" alt="Password Logo">
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Remember me selectbox -->
+                <div id="remember_me">
+                    <input type="radio" name="remember" id="remember">Remember me
+                </div>
+
+                <!-- Log In button -->
+                <div>
+                    <button class="btn" type="submit">Log In</button>
+                </div>
+                <div>
+                    <p class="end-message">
+                        <!-- Forgot Password -->
+                        <a href="/forgotPassword.html">Forgot password?</a>
+                        <!-- Create an account -->
+                        New here? <a href="/signin.html">Sign in</a>
+                    </p>
+                </div>
+            </form>
         </div>
-        <br> 
-        <!-- Log In button -->
-        <div>
-            <button type="submit">Log In</button>
-        </div>
-        <br>
-        <div>
-            <!-- Forgot Password -->
-            <a href="/forgotPassword.html">Forgot password?</a>
-            <br>
-            <!-- Create an account -->
-            New here? <a href="/signin.html">Sign in</a>
-        </div>
-    </form>
+
+    </div>
 
 </body>
+
 </html>
