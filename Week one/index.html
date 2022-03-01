@@ -7,62 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Log in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <div id="container">
-        <img id="ITAJrlogo" src="./img/ITA Jr LogoEscuro.png" alt="ITAJr.'s logo">
+<body id="home">
+    <!-- Header with Nav Bar -->
+    <header class="hero">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                    <img id="ITAJrlogo" src="./img/ITA Jr LogoEscuro.png" alt="ITAJr.'s logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="about_us"><i class="fa-regular fa-address-card"></i> About Us</a></li>
+                    <li><a href="#login" class="login"><i class="fa-solid fa-right-to-bracket"></i> Log in</a></li>
 
-
-        <div class="box">
-            <h1>Log in</h1>
-            <!-- Login input -->
-            <form action="loginFile.php">
-
-                <!-- Email input -->
-                <div class="form-group">
-                    <!-- <label for="email">Email</label> -->
-                    <div class="inputLine">
-                        <p>
-                            <img src="./img/Email_Logo.png" alt="email logo">
-                            <input type="email" name="email" id="email" placeholder="Enter your email">
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Password input -->
-                <div class="form-group">
-                    <div class="inputLine">
-                        <p>
-                            <!-- <label for="Password">Password</label> -->
-                            <img src="./img/Password_Logo.png" alt="Password Logo">
-                            <input type="password" name="password" id="password" placeholder="Enter your password">
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Remember me selectbox -->
-                <div id="remember_me">
-                    <input type="radio" name="remember" id="remember">Remember me
-                </div>
-
-                <!-- Log In button -->
-                <div>
-                    <button class="btn" type="submit">Log In</button>
-                </div>
-                <div>
-                    <p class="end-message">
-                        <!-- Forgot Password -->
-                        <a href="/forgotPassword.html">Forgot password?</a>
-                        <!-- Create an account -->
-                        New here? <a href="/signin.html">Sign in</a>
-                    </p>
-                </div>
-            </form>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-    </div>
+    <!-- Main Page -->
+    <main>
+        <div id="container">
+            <div class="box">
+                <h1>Log in</h1>
+                <!-- Login input -->
+                <form action="loginFile.php">
 
+                    <!-- Email input -->
+                    <div class="form-group">
+                        <!-- <label for="email">Email</label> -->
+                        <div class="inputLine">
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" name="email" id="email" placeholder="Enter your email">
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-group">
+                        <div class="inputLine">
+                            <p>
+                                <i class="fa fa-lock"></i>
+                                <input type="password" name="password" id="password" placeholder="Enter your password">
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Remember me selectbox -->
+                    <div id="remember_me">
+                        <input type="checkbox" name="remember" id="remember" class="checkbox">Remember me
+                    </div>
+
+                    <!-- Log In button -->
+                    <div>
+                        <button class="btn" type="submit">Log In</button>
+                    </div>
+                    <div>
+                        <p class="end-message">
+                            <!-- Forgot Password -->
+                            <a href="/forgotPassword.html">Forgot password?</a>
+                            <!-- Create an account -->
+                            New here? <a href="/signin.html">Sign in</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
